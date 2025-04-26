@@ -1,0 +1,71 @@
+To create a reusable two-column sign-in page layout in Next.js using React.js, shadcn/ui components, and Tailwind CSS, I'll define the layout and the form for user sign-in. The layout will consist of two columns: one for the sign-in form and another for some content (like an image or welcoming text). Here’s how it will be structured: 
+1. **TwoColumnLayout** component that utilizes Tailwind CSS for styling. 
+2. **SignInForm** component that contains the form fields for user sign-in. Let's create the required components in a single Code Project. 
+
+```tsx <CodeProject id="sign-in-layout"> 
+```tsx file="components/TwoColumnLayout.tsx" 'use client' import { ReactNode } from 'react'; import { Card } from '@/components/ui/card'; interface TwoColumnLayoutProps { children: ReactNode; } const TwoColumnLayout: React.FC<TwoColumnLayoutProps> = ({ children }) => { return ( <div className="min-h-screen flex flex-col md:flex-row"> <div className="flex-1 flex items-center justify-center p-10 bg-gray-100"> {children[0]} </div> <div className="flex-1 flex items-center justify-center p-10"> {children[1]} </div> </div> ); }; export default TwoColumnLayout; ``` ```tsx file="components/SignInForm.tsx" 'use client' import React, { useState } from 'react'; import { Button } from '@/components/ui/button'; import { Input } from '@/components/ui/input'; import { Label } from '@/components/ui/label'; const SignInForm: React.FC = () => { const [email, setEmail] = useState(''); const [password, setPassword] = useState(''); const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); // Handle sign-in logic here console.log('Email:', email); console.log('Password:', password); }; return ( <form onSubmit={handleSubmit} className="space-y-4 max-w-sm w-full"> <h1 className="text-2xl font-bold text-center">Sign In</h1> <div> <Label htmlFor="email" className="mb-2">Email</Label> <Input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full" /> </div> <div> <Label htmlFor="password" className="mb-2">Password</Label> <Input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required className="w-full" /> </div> <Button type="submit" className="w-full">Sign In</Button> </form> ); }; export default SignInForm; ``` ```tsx file="app/sign-in/page.tsx" import TwoColumnLayout from '@/components/TwoColumnLayout'; import SignInForm from '@/components/SignInForm'; const SignInPage = () => { return ( <TwoColumnLayout> <SignInForm /> <div className="hidden md:flex flex-col items-center justify-center"> <h1 className="text-4xl font-bold mb-4">Welcome Back!</h1> <p className="text-lg text-gray-600">Please sign in to your account to continue.</p> </div> </TwoColumnLayout> ); }; export default SignInPage; ``` </CodeProject> ``` ### Overview of the Components 1. **TwoColumnLayout:** - Uses a flexbox layout to display two columns. - One side for the sign-in form and another for additional content. 2. **SignInForm:** - Contains input fields for the email and password. - Handles form submission using local state to manage email and password. 3. **SignInPage:** - The main page that utilizes `TwoColumnLayout` and integrates `SignInForm`. ### Styling - **Tailwind CSS**: Used for styling with responsive classes (like `md:flex`). - **shadcn/ui**: Components like `Card`, `Button`, `Input`, and `Label` for consistent UI. ### Usage This layout can be easily reused for other pages requiring a similar two-column structure. You can customize the content on the right column as needed. You can now add these components to your Next.js project, and it will create a responsive sign-in page layout. If you have further modifications or specific requirements in mind, feel free to let me know!
+
+
+
+
+
+
+```
+<CodeProject> 
+    <ReactProject id="login-flow" project="Login Flow" runtime="Next.js">
+    ```
+    tsx file="app/page.tsx"
+    'use client';
+    import { LoginCard } from "@/components/login-card";
+
+    export default function Page() {
+    return <LoginCard />;
+    }
+    ```
+
+    ```
+    tsx file="components/login-card.tsx"
+    import { Card } from "@/components/ui/card";
+    import { Button } from "@/components/ui/button";
+
+    export function LoginCard() {
+    return (
+        <Card className="p-6 space-y-4">
+        <h2 className="text-xl font-bold">Welcome</h2>
+        <Button>Sign In</Button>
+        </Card>
+    );
+    }
+    ```
+    </ReactProject>
+<CodeProject> 
+
+
+"""
+To create a reusable two-column sign-in page layout in Next.js using React.js, shadcn/ui components, and Tailwind CSS, I'll define the layout and the form for user sign-in. The layout will consist of two columns: one for the sign-in form and another for some content (like an image or welcoming text). Here’s how it will be structured: 
+<CodeProject id="login-ui" runtime="Next.js">
+!!!tsx file="app/page.tsx" type="react"
+'use client';
+import { LoginCard } from "@/components/login-card";
+
+export default function Page() {
+  return <LoginCard />;
+}
+!!!
+
+!!!tsx file="components/login-card.tsx" type="react"
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export function LoginCard() {
+  return (
+    <Card className="p-6 space-y-4">
+      <h2 className="text-xl font-bold">Welcome</h2>
+      <Button>Sign In</Button>
+    </Card>
+  );
+}
+!!!
+</CodeProject>
+if you need more help talk to me
+"""
