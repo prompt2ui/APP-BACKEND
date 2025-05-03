@@ -64,5 +64,3 @@ fastapi dev
 
 * โปรดตรวจสอบไฟล์ `requirements.txt` สำหรับรายการ Dependencies ทั้งหมดที่โปรเจกต์นี้ใช้งาน
 * สำหรับการรันใน Production Environment คุณอาจจะต้องใช้คำสั่ง `fastapi run` หรือปรับแต่งการตั้งค่า Server เพิ่มเติม โปรดดู Documentation ของ FastAPI สำหรับข้อมูลเพิ่มเติม
-
-```
