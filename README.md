@@ -1,6 +1,3 @@
-**`README.md` (ปรับปรุง)**
-
-```markdown
 # APP-BACKEND
 
 Backend ของแอปพลิเคชันนี้พัฒนาด้วย Python และ FastAPI
