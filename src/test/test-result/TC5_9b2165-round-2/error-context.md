@@ -1,0 +1,51 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - region "Notifications (F8)":
+      - list
+    - region "Notifications alt+T"
+    - generic [ref=e4]:
+      - heading "Your To Do" [level=1] [ref=e5]
+      - generic [ref=e6]:
+        - textbox "Add new task" [ref=e8]
+        - button [disabled] [ref=e9]:
+          - img [ref=e10]
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - button "Toggle status for Design landing page" [active] [ref=e13] [cursor=pointer]
+          - generic [ref=e14]: Design landing page
+          - button "Delete Design landing page" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+        - generic [ref=e19]:
+          - button "Toggle status for Write API documentation" [ref=e20] [cursor=pointer]
+          - generic [ref=e21]: Write API documentation
+          - button "Delete Write API documentation" [ref=e22] [cursor=pointer]:
+            - img [ref=e23]
+        - generic [ref=e26]:
+          - button "Toggle status for Test payment module" [ref=e27] [cursor=pointer]:
+            - img [ref=e28]
+          - generic [ref=e30]: Test payment module
+          - button "Delete Test payment module" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+        - generic [ref=e35]:
+          - button "Toggle status for Update project report" [ref=e36] [cursor=pointer]
+          - generic [ref=e37]: Update project report
+          - button "Delete Update project report" [ref=e38] [cursor=pointer]:
+            - img [ref=e39]
+        - generic [ref=e42]:
+          - button "Toggle status for Fix login bug on mobile" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]: Fix login bug on mobile
+          - button "Delete Fix login bug on mobile" [ref=e45] [cursor=pointer]:
+            - img [ref=e46]
+      - paragraph [ref=e49]: "Your remaining todos : 4"
+      - paragraph [ref=e50]: "\"Doing what you love is the cornerstone of having abundance in your life.\" - Wayne Dyer"
+  - complementary "Edit with Lovable" [ref=e51]:
+    - link "Edit with Lovable" [ref=e52] [cursor=pointer]:
+      - /url: https://lovable.dev/projects/f64755d6-c592-4126-a2d0-76432aa0f607?utm_source=lovable-badge
+      - generic [ref=e53]: Edit with
+      - img [ref=e54]
+    - button "Dismiss" [ref=e59] [cursor=pointer]:
+      - img [ref=e60]
+```

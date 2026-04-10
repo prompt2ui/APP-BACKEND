@@ -1,0 +1,45 @@
+{
+  "startTime": "2026-04-10T13:45:41.185Z",
+  "endTime": "2026-04-10T13:45:49.168Z",
+  "logs": [],
+  "performance": {
+    "timestamp": "2026-04-10T13:45:49.168Z",
+    "browser": {
+      "navigation": {
+        "type": "navigate",
+        "durationMs": 3652,
+        "domContentLoadedMs": 3597,
+        "loadCompleteMs": 3651,
+        "domInteractiveMs": 3580
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTimeMs": 3592
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTimeMs": 3592
+        }
+      ],
+      "resourceSummary": {
+        "count": 5,
+        "transferSizeBytes": 116094,
+        "avgDurationMs": 289.9,
+        "maxDurationMs": 589
+      },
+      "memory": {
+        "usedJSHeapSize": 10000000,
+        "totalJSHeapSize": 10000000,
+        "jsHeapSizeLimit": 3760000000
+      }
+    },
+    "xhrFetchMonitored": {
+      "count": 0,
+      "minMs": null,
+      "maxMs": null,
+      "avgMs": null,
+      "p95Ms": null
+    }
+  }
+}

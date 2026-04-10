@@ -1,0 +1,19 @@
+{
+  "name": "app-backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@liam-hq/cli": "^0.7.21",
+    "@playwright/test": "^1.58.2",
+    "@types/bun": "latest",
+    "prisma": "^5.17.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "jsdom": "^27.0.1"
+  }
+}

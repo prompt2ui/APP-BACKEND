@@ -1,0 +1,29 @@
+{
+  "startTime": "2026-04-10T13:44:29.803Z",
+  "endTime": "2026-04-10T13:44:36.590Z",
+  "logs": [
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://testing-todo-list.lovable.app/",
+      "resourceType": "document",
+      "timestamp": "2026-04-10T13:44:29.832Z"
+    },
+    {
+      "type": "navigated",
+      "url": "https://testing-todo-list.lovable.app/",
+      "timestamp": "2026-04-10T13:44:31.210Z"
+    },
+    {
+      "type": "navigated",
+      "url": "https://testing-todo-list.lovable.app/",
+      "timestamp": "2026-04-10T13:44:32.100Z"
+    },
+    {
+      "type": "click",
+      "tag": "polyline",
+      "label": "",
+      "timestamp": "2026-04-10T13:44:35.431Z"
+    }
+  ]
+}

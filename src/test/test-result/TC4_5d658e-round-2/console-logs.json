@@ -1,0 +1,23 @@
+{
+  "startTime": "2026-04-10T13:45:56.655Z",
+  "endTime": "2026-04-10T13:46:01.701Z",
+  "logs": [
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://testing-todo-list.lovable.app/",
+      "resourceType": "document",
+      "timestamp": "2026-04-10T13:45:56.681Z"
+    },
+    {
+      "type": "navigated",
+      "url": "https://testing-todo-list.lovable.app/",
+      "timestamp": "2026-04-10T13:45:56.833Z"
+    },
+    {
+      "type": "navigated",
+      "url": "https://testing-todo-list.lovable.app/",
+      "timestamp": "2026-04-10T13:45:56.962Z"
+    }
+  ]
+}
