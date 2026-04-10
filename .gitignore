@@ -1,34 +1,22 @@
-# dependencies (bun install)
-node_modules
-
-# output
-out
-dist
-*.tgz
-
-# code coverage
-coverage
-*.lcov
-
-# logs
-logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
-
-# dotenv environment variable files
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
 
-# caches
-.eslintcache
-.cache
-*.tsbuildinfo
+# Database & Storage
+*.db
+minio/data/
 
-# IntelliJ based IDEs
-.idea
+# Playwright & Test Results
+test-results/
+src/test/test-result/
+debug/output/
+*.webm
+*.png
+*.zip
 
-# Finder (MacOS) folder config
+# IDE & OS
+.vscode/
 .DS_Store
